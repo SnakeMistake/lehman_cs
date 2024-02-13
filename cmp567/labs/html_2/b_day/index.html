@@ -15,26 +15,32 @@
          <label for="emailAddr">Email address?</label>
          
          <!-- TODO: Add regular expression to pattern -->
-         <input type="email" id="emailAddr" name="emailAddr" placeholder="name@domain.com">
+         <input type="email" id="emailAddr" name="emailAddr" pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" placeholder="name@domain.com" >
       </div>
       <div>
          <label for="dateToSend">Date to send?</label>
          <!-- TODO: Add date widget -->
+         <input type="date" id="dateToSend" name="dateToSend">
       </div>
       <div>
          <label for="messageColor">Message color?</label>
          <!-- TODO: Add color widget -->
+         <input type="color" id="messageColor" name="messageColor">
       </div>
       <div>
          <label for="numBlinks">Number of blinks?</label>
          <!-- TODO: Add number widget -->
+         <input name="numBlinks" id="numBlinks" type="number" value="0" min="0" max="10">
       </div>
       <div>
          <label for="musicVolume">Music volume?</label>
          <!-- TODO: Add range widget -->
+         <input type="range" id="musicVolume" name="musicVolume" value="20" min="0" max="50">
       </div>
      
      <!-- TODO: Add submit button -->
+     <button value="submit" name="submit" id="submit">
+      <label for="submit">Send Birthday Message</label>
    </form>
    
 </body>
