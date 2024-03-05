@@ -43,7 +43,7 @@ function changeImage(){
    }else if (fInput.value>50){
       weatherImage.src= "./warm.png"
    }else{
-      weatherImage.src= ""
+      weatherImage.src= none
    }
 }
 
